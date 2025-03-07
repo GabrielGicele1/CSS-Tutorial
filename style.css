@@ -1,85 +1,112 @@
-body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #333;
-    text-align: left;
+.container {
+    display: flex;
+    flex-direction: row;
+    /* row, row-reverse, column, column-reverse */
+    flex-wrap: wrap;
+    /* nowrap, wrap, wrap-reverse */
+    justify-content: space-between;
+    /* flex-start, flex-end, center, space-around, space-evenly */
+    align-items: center;
+    /* flex-start, flex-end, center, baseline, stretch */
+    gap: 20px;
+    /* space between items */
 }
 
-h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-bottom: 0.5em;
+.item {
+    flex: 1;
+    /* shorthand for flex-grow, flex-shrink, flex-basis */
 }
 
-.fancy-text {
-    font-style: italic;
-    text-decoration: underline;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    word-spacing: 4px;
+.featured-item {
+    flex: 2;
+    /* takes up twice as much space as other items */
+}.container {
+    display: flex;
+    flex-direction: row;
+    /* row, row-reverse, column, column-reverse */
+    flex-wrap: wrap;
+    /* nowrap, wrap, wrap-reverse */
+    justify-content: space-between;
+    /* flex-start, flex-end, center, space-around, space-evenly */
+    align-items: center;
+    /* flex-start, flex-end, center, baseline, stretch */
+    gap: 20px;
+    /* space between items */
 }
 
-/* Web Fonts */
-
-body {
-    font-family: 'Roboto', sans-serif;
+.item {
+    flex: 1;
+    /* shorthand for flex-grow, flex-shrink, flex-basis */
 }
 
-/* Typography Example */
-.blog-post {
-    font-family: 'Georgia', serif;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #333;
+.featured-item {
+    flex: 2;
+    /* takes up twice as much space as other items */
+}.container {
+    display: flex;
+    flex-direction: row;
+    /* row, row-reverse, column, column-reverse */
+    flex-wrap: wrap;
+    /* nowrap, wrap, wrap-reverse */
+    justify-content: space-between;
+    /* flex-start, flex-end, center, space-around, space-evenly */
+    align-items: center;
+    /* flex-start, flex-end, center, baseline, stretch */
+    gap: 20px;
+    /* space between items */
 }
 
-.blog-post h1 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    color: #222;
+.item {
+    flex: 1;
+    /* shorthand for flex-grow, flex-shrink, flex-basis */
 }
 
-.blog-post .subtitle {
-    font-size: 20px;
-    color: #555;
-    margin-top: 0;
-    margin-bottom: 8px;
+.featured-item {
+    flex: 2;
+    /* takes up twice as much space as other items */
 }
 
-.blog-post .meta {
-    font-size: 14px;
-    color: #777;
-    font-style: italic;
-    margin-bottom: 30px;
+/* Nav-bar FLexbox Example */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+    background-color: #333;
+    color: white;
 }
 
-.blog-post .lead {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-
-.blog-post h2 {
+.logo {
     font-size: 24px;
-    margin-top: 40px;
-    margin-bottom: 16px;
-    color: #222;
+    font-weight: bold;
 }
 
-.blog-post p {
-    margin-bottom: 20px;
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
 }
 
-.blog-post blockquote {
-    border-left: 4px solid #ddd;
-    padding-left: 20px;
-    margin-left: 0;
-    font-style: italic;
-    color: #555;
-    margin: 30px 0;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f8c146;
+}
+
+.nav-button {
+    background-color: #f8c146;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
 }
