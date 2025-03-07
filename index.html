@@ -12,13 +12,22 @@
     <h2>Make HTML Here</h2>
 
 
-    <div class="card-container">
-        <div class="card">Card 1</div>
-        <div class="card">Card 2</div>
-        <div class="card">Card 3</div>
-        <div class="card">Card 4</div>
-        <div class="card">Card 5</div>
-        <div class="card">Card 6</div>
+    <div class="theme-container light-theme">
+        <nav class="theme-navbar">
+            <div class="brand">MyWebsite</div>
+            <button id="theme-toggle">Toggle Theme</button>
+        </nav>
+
+        <div class="theme-content">
+            <h1>Welcome to My Website</h1>
+            <p>This demonstrates a theme system using CSS variables.</p>
+            <button class="theme-button">Learn More</button>
+        </div>
     </div>
+    <script>
+        document.getElementById("theme-toggle").addEventListener('click', function () {
+            document.querySelector('.theme-container').classList.toggle('dark-theme');
+        });
+    </script>
 </body>
 </html>
