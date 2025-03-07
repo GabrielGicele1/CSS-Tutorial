@@ -1,0 +1,15 @@
+selector {
+    property: value;
+    property: value;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: red;
+    font-size: 18px;
+}
+
