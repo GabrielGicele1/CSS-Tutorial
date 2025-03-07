@@ -1,105 +1,66 @@
-:root {
-    /* Define variables at root level */
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
-    --spacing-unit: 8px;
-    --border-radius: 4px;
-    --transition-speed: 0.3s;
-}
-
+/* Transitions */
 .button {
-    /* Use variables */
-    background-color: var(--primary-color);
+    background-color: blue;
     color: white;
-    padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
-    border-radius: var(--border-radius);
-    transition: background-color var(--transition-speed);
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-    background-color: var(--secondary-color);
+    background-color: darkblue;
+    transform: translateY(-3px);
 }
 
-/* Change variables with media queries */
-@media (max-width: 768px) {
-    :root {
-        --spacing-unit: 6px;
+/* Animations */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 
-/* Theme Example */
-:root {
-    /* Default theme (light) */
-    --bg-primary: #ffffff;
-    --bg-secondary: #f0f0f0;
-    --text-primary: #333333;
-    --text-secondary: #666666;
-    --accent-color: #4CAF50;
-    --border-color: #dddddd;
+.bouncing-element {
+    animation: bounce 1s ease infinite;
 }
 
-.dark-theme {
-    --bg-primary: #222222;
-    --bg-secondary: #333333;
-    --text-primary: #ffffff;
-    --text-secondary: #bbbbbb;
-    --accent-color: #8BC34A;
-    --border-color: #444444;
-}
-
-.theme-container {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    min-height: 100vh;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.theme-navbar {
+/* Loading Spinner Example */
+.loading-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 16px;
-    background-color: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-color);
+    justify-content: center;
+    height: 100vh;
 }
 
-.brand {
-    font-size: 24px;
-    font-weight: bold;
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
 }
 
-.theme-toggle {
-    background-color: var(--accent-color);
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.theme-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.theme-content h1 {
-    color: var(--text-primary);
-}
-
-.theme-content p {
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin: 20px 0;
-}
-
-.theme-button {
-    background-color: var(--accent-color);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+.loading-container p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #666;
 }
