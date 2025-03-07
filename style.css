@@ -12,4 +12,74 @@ p {
     color: red;
     font-size: 18px;
 }
+/* Basic selectors */
+/* Element selector */
+p {
+    color: blue;
+}
+
+/* ID selector */
+#header {
+    background-color: black;
+    color: white;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* Combinators */
+
+/* Descendant selector (space) */
+article p {
+    font-style: italic;
+}
+
+/* Child selector (>) */
+ul>li {
+    list-style-type: square;
+}
+
+/* Adjacent sibling selector (+) */
+h2+p {
+    font-weight: bold;
+}
+
+/* General sibling selector (~) */
+h2~p {
+    color: gray;
+}
+
+/* Attribute Selectors */
+
+/* Elements with specific attribute */
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+/* Elements with attribute containing specific word */
+a[href*="example"] {
+    color: green;
+}
+
+/* Pseudo-classes and Pseudo Elements */
+
+/* Pseudo-class (state-based) */
+a:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 3px solid blue;
+}
+
+/* Pseudo-element (part of an element) */
+p::first-letter {
+    font-size: 2em;
+}
+
+p::before {
+    content: "→ ";
+}
 
