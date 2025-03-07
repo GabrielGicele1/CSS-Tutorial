@@ -1,61 +1,85 @@
-.element {
-    /* Named color */
-    color: red;
-
-    /* Hex color */
-    color: #ff0000;
-
-    /* RGB color */
-    color: rgb(255, 0, 0);
-
-    /* RGBA color (with alpha/transparency) */
-    color: rgba(255, 0, 0, 0.5);
-
-    /* HSL color (hue, saturation, lightness) */
-    color: hsl(0, 100%, 50%);
-
-    /* HSLA color (with alpha) */
-    color: hsla(0, 100%, 50%, 0.5);
-}
-
-.element {
-    /* Background color */
-    background-color: #f0f0f0;
-
-    /* Background image */
-    background-image: url('background.jpg');
-
-    /* Background size */
-    background-size: cover;
-
-    /* Background position */
-    background-position: center;
-
-    /* Background repeat */
-    background-repeat: no-repeat;
-
-    /* Shorthand property */
-    background: #f0f0f0 url('background.jpg') no-repeat center / cover;
-}
-
-/* Gradient Button */
-.gradient-button {
-    padding: 12px 24px;
+body {
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    background-image: linear-gradient(to right, #4CAF50, #2196F3);
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
 }
 
-.gradient-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
 }
 
-.gradient-button:active {
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+.fancy-text {
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+/* Web Fonts */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Typography Example */
+.blog-post {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+.blog-post h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.blog-post .subtitle {
+    font-size: 20px;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.blog-post .meta {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.blog-post .lead {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    color: #222;
+}
+
+.blog-post p {
+    margin-bottom: 20px;
+}
+
+.blog-post blockquote {
+    border-left: 4px solid #ddd;
+    padding-left: 20px;
+    margin-left: 0;
+    font-style: italic;
+    color: #555;
+    margin: 30px 0;
 }
